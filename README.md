@@ -1,3 +1,3 @@
 # js-project-business-site
 
-hello test number 2
+netlify link: https://designshop.netlify.app/
