@@ -1,7 +1,7 @@
 body {
     background: #FBFAF7;
     margin: 0;
-    padding-top: 90px;
+    /* padding-top: 90px; */
     /* !!! to make the header not cover the content !!! */
 }
 
@@ -14,14 +14,15 @@ body {
 }
 
 /* header css */
-.header {
+.menu {
     position: fixed;
+    padding: 30px 0;
     top: 0;
     width: 100%;
     background: #FBFAF7;
     margin-bottom: 0px;
     box-shadow: 0 0 100px rgb(0, 0, 0);
-    z-index: 1000;
+    z-index: 1;
 }
 
 .header_logo {
@@ -33,19 +34,18 @@ body {
     width: 100px;
 }
 
-.header-container {
+.menu-icons-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 10px 10px 10px;
 }
 
-.icon-container {
+.nav-icon-container {
     display: none;
 }
 
 /* nav css */
-.header_nav {
+.nav-list-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: start;
@@ -53,7 +53,7 @@ body {
     text-transform: uppercase;
 }
 
-.nav-list {
+.nav-list1 {
     display: flex;
     gap: 40px;
     margin: 0;
@@ -70,7 +70,7 @@ body {
     grid-column: 4;
 }
 
-.header_nav a,
+.nav-list-container a,
 ul,
 li {
     color: black;
@@ -81,7 +81,7 @@ li {
     transition: color 0.3s;
 }
 
-.header_nav a:hover {
+.nav-list-container a:hover {
     color: lightgrey;
 }
 
@@ -137,16 +137,16 @@ p {
 }
 
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1200px) {
     body {
-        padding-top: 77px;
+        /* padding-top: 77px; */
     }
 
-    .header_nav {
+    .nav-list-container {
         display: none;
     }
 
-    .icon-container {
+    .nav-icon-container {
         display: flex;
         align-items: center;
     }
