@@ -3,8 +3,19 @@ body {
     margin: 0;
     padding-top: 90px;
     font-family: "Inter", serif;
+    font-optical-sizing: auto;
     /* !!! to make the header not cover the content !!! */
 }
+
+/* 
+.inter-<uniquifier> {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+
 
 /* header css */
 .header {
@@ -40,6 +51,7 @@ body {
 }
 
 .search-icon,
+.user-icon,
 .shoping-bag,
 .burger-menu {
     display: none;
@@ -145,6 +157,7 @@ p {
     }
 
     .search-icon,
+    .user-icon,
     .shoping-bag,
     .burger-menu {
         display: inline-block;
