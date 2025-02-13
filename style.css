@@ -1,7 +1,7 @@
 body {
     background: #FBFAF7;
     margin: 0;
-    padding-top: 99px;
+    /* padding-top: 99px; */
     font-family: "Inter", serif;
     font-optical-sizing: auto;
     font-weight: normal;
@@ -29,6 +29,7 @@ body {
     /* margin-bottom: 0px; */
     box-shadow: 0 0 100px rgb(0, 0, 0);
     z-index: 1000;
+    /* border-bottom: #333 solid 2px; */
 }
 
 .header_logo {
@@ -93,12 +94,18 @@ li {
 
 .hero-container {
     position: relative;
+    margin: 10% 5%;
+    /* Adds 10% margin to the top and bottom, and 5% margin to the left and right */
     height: 50vh;
     overflow: hidden;
-    width: 100%;
+    width: auto;
+    /* Change width to auto to respect the left and right margins */
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border: #333 solid 2px; */
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgb(35, 35, 35);
 }
 
 .overlay {
@@ -123,35 +130,12 @@ li {
     font-size: 50px;
 }
 
-/* .video-header {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    min-height: var(--min-height);
-    max-width: var(--site-width-wide);
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-.video-header__content {
-    z-index: 1;
-}
-
-.video-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background-size: cover;
-    background-position: 50%;
-} */
-
 /* grid shop Css */
 .grid-shop {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    margin-top: 5%;
+    border-top: #333 solid 2px;
 }
 
 .grid-shop a {
