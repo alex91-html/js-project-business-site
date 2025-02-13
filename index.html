@@ -8,6 +8,19 @@
         content="width=device-width, initial-scale=1.0"
     > <!-- this is for responsive design, meta-tag -->
     <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet"
+    >
+    <link
         rel="stylesheet"
         href="./style.css"
     >
@@ -74,165 +87,166 @@
                     </g>
                 </svg>
             </a>
-            <!-- search icon -->
-            <div class="search-icon">
-                <i class="fas fa-search"></i>
-            </div>
-            <!-- shoping bag icon -->
-            <div class="shoping-bag">
-                <i class="fas fa-shopping-bag"></i>
-            </div>
-            <!-- Burger menu icon -->
-            <div class="burger-menu">
-                <i class="fas fa-bars"></i>
+            <!-- icons -->
+            <div class="icon-container">
+                <div class="search-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="shoping-bag">
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+                <div class="burger-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
         </div>
 
-        <!-- the navigation is below -->
-        <div class="header_nav"> <!-- this is the header nav, display: grid, align-item: start; -->
-            <ul class="nav-list"> <!-- this is the first nav list, display:flex, grid-column: span 2;
-            -->
+        <div class="header_nav">
+            <ul class="nav-list">
                 <li><a href="#">About</a></li>
                 <li><a href="#">Designers</a></li>
                 <li><a href="#">Furnitures</a></li>
             </ul>
-            <ul class="nav-list2"> <!-- this is the second nav list, display:flex, grid-column: 4;
-            -->
+            <ul class="nav-list2">
                 <li><a href="#">Search</a></li>
                 <li><a href="#">Cart (0)</a></li>
             </ul>
         </div>
     </header>
+    <main>
+        <div class="grid-shop">
+            <!-- article -->
+            <article>
+                <a href="#">
+                    <img
+                        src="./assets/img1.png"
+                        alt="image"
+                    >
+                    <div class="card_content">
+                        <h2>Product title</h2>
+                        <p>Product description here ...</p>
+                        <p>Price: 100 KR</p>
+                    </div>
+                </a>
+            </article>
 
-    <section class="grid-shop"> <!-- this is the grid shop, display: grid -->
-        <!-- article -->
-        <a href="#">
+            <!-- article -->
             <article>
-                <img
-                    src="./assets/img1.png"
-                    alt="image"
-                >
-                <div class="card_content"> <!-- this is the card content, display: flex – flex-direction: column -->
-                    <h2>Product title</h2>
-                    <p>Product description here ...</p>
-                    <p>Price: 100 KR</p>
-                </div>
+                <a href="#">
+                    <img
+                        src="./assets/img2.png"
+                        alt="image"
+                    >
+                    <div class="card_content">
+                        <h2>Product title</h2>
+                        <p>Product description here ...</p>
+                        <p>Price: 100 KR</p>
+                    </div>
+                </a>
             </article>
-        </a>
-        <!-- article -->
-        <a href="#">
+            <!-- article -->
             <article>
-                <img
-                    src="./assets/img2.png"
-                    alt="image"
-                >
-                <div class="card_content">
-                    <h2>Product title</h2>
-                    <p>Product description here ...</p>
-                    <p>Price: 100 KR</p>
-                </div>
+                <a href="#">
+                    <img
+                        src="./assets/img3.png"
+                        alt="image"
+                    >
+                    <div class="card_content">
+                        <h2>Product title</h2>
+                        <p>Product description here ...</p>
+                        <p>Price: 100 KR</p>
+                    </div>
+                </a>
             </article>
-        </a>
-        <!-- article -->
-        <a href="#">
+            <!-- article -->
             <article>
-                <img
-                    src="./assets/img3.png"
-                    alt="image"
-                >
-                <div class="card_content">
-                    <h2>Product title</h2>
-                    <p>Product description here ...</p>
-                    <p>Price: 100 KR</p>
-                </div>
+                <a href="#">
+                    <img
+                        src="./assets/img4.png"
+                        alt="image"
+                    >
+                    <div class="card_content">
+                        <h2>Product title</h2>
+                        <p>Product description here ...</p>
+                        <p>Price: 100 KR</p>
+                    </div>
+                </a>
             </article>
-        </a>
-        <!-- article -->
-        <a href="#">
+            <!-- article -->
             <article>
-                <img
-                    src="./assets/img4.png"
-                    alt="image"
-                >
-                <div class="card_content">
-                    <h2>Product title</h2>
-                    <p>Product description here ...</p>
-                    <p>Price: 100 KR</p>
-                </div>
+                <a href="#">
+                    <img
+                        src="./assets/img5.png"
+                        alt="image"
+                    >
+                    <div class="card_content">
+                        <h2>Product title</h2>
+                        <p>Product description here ...</p>
+                        <p>Price: 100 KR</p>
+                    </div>
+                </a>
             </article>
-        </a>
-        <!-- article -->
-        <a href="#">
+            <!-- article -->
             <article>
-                <img
-                    src="./assets/img5.png"
-                    alt="image"
-                >
-                <div class="card_content">
-                    <h2>Product title</h2>
-                    <p>Product description here ...</p>
-                    <p>Price: 100 KR</p>
-                </div>
+                <a href="#">
+                    <img
+                        src="./assets/img6.png"
+                        alt="image"
+                    >
+                    <div class="card_content">
+                        <h2>Product title</h2>
+                        <p>Product description here ...</p>
+                        <p>Price: 100 KR</p>
+                    </div>
+                </a>
             </article>
-        </a>
-        <!-- article -->
-        <a href="#">
+            <!-- article -->
             <article>
-                <img
-                    src="./assets/img6.png"
-                    alt="image"
-                >
-                <div class="card_content">
-                    <h2>Product title</h2>
-                    <p>Product description here ...</p>
-                    <p>Price: 100 KR</p>
-                </div>
+                <a href="#">
+                    <img
+                        src="./assets/img7.png"
+                        alt="image"
+                    >
+                    <div class="card_content">
+                        <h2>Product title</h2>
+                        <p>Product description here ...</p>
+                        <p>Price: 100 KR</p>
+                    </div>
+                </a>
             </article>
-        </a>
-        <!-- article -->
-        <a href="#">
+            <!-- article -->
             <article>
-                <img
-                    src="./assets/img7.png"
-                    alt="image"
-                >
-                <div class="card_content">
-                    <h2>Product title</h2>
-                    <p>Product description here ...</p>
-                    <p>Price: 100 KR</p>
-                </div>
+                <a href="#">
+                    <img
+                        src="./assets/img8.png"
+                        alt="image"
+                    >
+                    <div class="card_content">
+                        <h2>Product title</h2>
+                        <p>Product description here ...</p>
+                        <p>Price: 100 KR</p>
+                    </div>
+                </a>
             </article>
-        </a>
-        <!-- article -->
-        <a href="#">
+            <!-- article -->
             <article>
-                <img
-                    src="./assets/img8.png"
-                    alt="image"
-                >
-                <div class="card_content">
-                    <h2>Product title</h2>
-                    <p>Product description here ...</p>
-                    <p>Price: 100 KR</p>
-                </div>
+                <a href="#">
+                    <img
+                        src="./assets/img14.png"
+                        alt="image"
+                    >
+                    <div class="card_content">
+                        <h2>Product title</h2>
+                        <p>Product description here ...</p>
+                        <p>Price: 100 KR</p>
+                    </div>
+                </a>
             </article>
-        </a>
-        <a href="#">
-            <article>
-                <img
-                    src="./assets/img14.png"
-                    alt="image"
-                >
-                <div class="card_content">
-                    <h2>Product title</h2>
-                    <p>Product description here ...</p>
-                    <p>Price: 100 KR</p>
-                </div>
-            </article>
-        </a>
-    </section>
+        </div>
+    </main>
+    <footer>
 
-
+    </footer>
 </body>
 
 </html>
