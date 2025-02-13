@@ -25,6 +25,16 @@ body {
     width: 100px;
 }
 
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-icon, .shoping-bag, .burger-menu {
+    display: none;
+}
+
 /* nav css */
 .header_nav {
     display: grid;
@@ -112,10 +122,11 @@ p {
 
 
 @media screen and (max-width: 1025px) {
-    .nav-list {
+    .nav-list, .nav-list2 {
         display: none;
     }
-   .nav-list2 {
-        display: none;
+    .search-icon, .shoping-bag, .burger-menu {
+        display: flex;
     }
+
 }
