@@ -1,7 +1,7 @@
 body {
     background: #FBFAF7;
     margin: 0;
-    /* padding-top: 90px; */
+    padding-top: 99px;
     /* !!! to make the header not cover the content !!! */
 }
 
@@ -16,11 +16,11 @@ body {
 /* header css */
 .menu {
     position: fixed;
-    padding: 30px 0;
+    padding: 20px 10px;
     top: 0;
     width: 100%;
     background: #FBFAF7;
-    margin-bottom: 0px;
+    /* margin-bottom: 0px; */
     box-shadow: 0 0 100px rgb(0, 0, 0);
     z-index: 1;
 }
@@ -49,7 +49,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: start;
-    padding: 15px;
+    margin: 20px 15px 0 15px;
     text-transform: uppercase;
 }
 
@@ -83,6 +83,15 @@ li {
 
 .nav-list-container a:hover {
     color: lightgrey;
+}
+
+.video-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(../img/video-header.jpg) no-repeat center center/cover;
+    text-align: center;
 }
 
 /* grid shop Css */
