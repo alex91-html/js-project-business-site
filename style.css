@@ -94,7 +94,8 @@ li {
 
 .hero-container {
     position: relative;
-    margin: 10% 5%;
+    margin-top: 7%;
+    /* margin: 5% 5%; */
     /* Adds 10% margin to the top and bottom, and 5% margin to the left and right */
     height: 50vh;
     overflow: hidden;
@@ -104,8 +105,8 @@ li {
     justify-content: center;
     align-items: center;
     /* border: #333 solid 2px; */
-    border-radius: 25px;
-    box-shadow: 0 0 10px rgb(35, 35, 35);
+    /* border-radius: 25px; */
+    /* box-shadow: 0 0 10px rgb(35, 35, 35); */
 }
 
 .overlay {
@@ -120,6 +121,7 @@ li {
 
 .hero-video {
     position: absolute;
+    filter: invert(100%) blur(2px) brightness(100%);
 }
 
 .hero-content {
@@ -130,12 +132,37 @@ li {
     font-size: 50px;
 }
 
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.cta-button {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: #333;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    /* transition: 0.3s; */
+}
+
 /* grid shop Css */
 .grid-shop {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    margin-top: 5%;
-    border-top: #333 solid 2px;
+    /* margin-top: 5%; */
+    border-top: #333 solid 3px;
 }
 
 .grid-shop a {
