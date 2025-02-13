@@ -45,17 +45,12 @@ body {
     padding: 10px 10px 0px 10px;
 }
 
-.icon-container {
-    display: flex;
-    align-items: center;
-}
 
-.search-icon,
-.user-icon,
-.shoping-bag,
-.burger-menu {
+.icon-container {
     display: none;
 }
+
+
 
 /* nav css */
 .header_nav {
@@ -156,14 +151,25 @@ p {
         display: none;
     }
 
-    .search-icon,
-    .user-icon,
-    .shoping-bag,
-    .burger-menu {
+    .icon-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .material-icons {
         display: inline-block;
+        color: #000;
         margin: 15px;
         font-size: 2rem;
         cursor: pointer;
+        transition: color 0.3s;
     }
 
+    .burger-menu {
+        margin-right: 0px;
+    }
+
+    .material-icons:hover {
+        color: #555;
+    }
 }
