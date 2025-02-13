@@ -2,19 +2,25 @@ body {
     background: #FBFAF7;
     margin: 0;
     padding-top: 99px;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-size: 1rem;
+    color: #333;
     /* !!! to make the header not cover the content !!! */
 }
 
+/* 
 * {
     font-family: "Inter", serif;
     font-optical-sizing: auto;
     font-weight: normal;
     font-size: 1rem;
     color: #333;
-}
+} */
 
 /* header css */
-.menu {
+.nav-menu {
     position: fixed;
     padding: 20px 10px;
     top: 0;
@@ -22,7 +28,7 @@ body {
     background: #FBFAF7;
     /* margin-bottom: 0px; */
     box-shadow: 0 0 100px rgb(0, 0, 0);
-    z-index: 1;
+    z-index: 1000;
 }
 
 .header_logo {
@@ -85,14 +91,62 @@ li {
     color: lightgrey;
 }
 
-.video-header {
+.hero-container {
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background: url(../img/video-header.jpg) no-repeat center center/cover;
-    text-align: center;
 }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(76, 0, 255, 0.5);
+    z-index: 1;
+}
+
+.hero-video {
+    position: absolute;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: yellow;
+    font-size: 50px;
+}
+
+/* .video-header {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    min-height: var(--min-height);
+    max-width: var(--site-width-wide);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.video-header__content {
+    z-index: 1;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: 50%;
+} */
 
 /* grid shop Css */
 .grid-shop {
@@ -147,9 +201,8 @@ p {
 
 
 @media screen and (max-width: 1200px) {
-    body {
+    /* body {
         /* padding-top: 77px; */
-    }
 
     .nav-list-container {
         display: none;
@@ -182,4 +235,5 @@ p {
     .material-symbols-outlined:hover {
         color: lightgrey;
     }
+
 }
