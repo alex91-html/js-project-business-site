@@ -117,12 +117,15 @@
 
 
     <section class="hero-container">
-        <section class="hero-content">
+        <div class="hero-content">
             <h1>Timeless Designs, Crafted for You</h1>
             <p>Discover modern, high-quality furniture that transforms your space, built for everyday living.</p>
             <p>Sign up now & get 10% Off!</p>
-            <button class="cta-button">Sign Up</button>
-        </section>
+            <a
+                href="#signup"
+                class="cta-button"
+            >Sign Up</a>
+        </div>
         <div class="overlay"></div>
         <div class="hero-video">
             <video
@@ -134,11 +137,6 @@
                 palysinline
             ></video>
     </section>
-
-    <section>
-
-    </section>
-
     <main class="grid-shop">
         <!-- article -->
         <article>
@@ -268,8 +266,124 @@
             </a>
         </article>
     </main>
-    <footer>
-    </footer>
+    <!-- Signup Section (Target for Scroll) -->
+    <section id="signup"> <!-- this is the target for the scroll -->
+        <form
+            class="signup-form"
+            action="#"
+            method="POST"
+            onsubmit="return validatePassword()"
+        >
+            <h2>Create Your Account</h2>
+
+            <!-- First Name -->
+            <label for="first-name">First Name:</label>
+            <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                placeholder="Enter your first name"
+                required
+            >
+            <!-- Second Name -->
+            <label for="second-name">Second Name:</label>
+            <input
+                type="text"
+                id="second-name"
+                name="second-name"
+                placeholder="Enter your second name"
+                required
+            >
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+            >
+            <!-- Password -->
+            <label for="password">Password:</label>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                required
+            >
+            <!-- Confirm Password -->
+            <label for="confirm-password">Confirm Password:</label>
+            <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+                placeholder="Re-enter your password"
+                required
+            >
+            <!-- Error message for password mismatch -->
+            <p
+                id="password-error"
+                style="color: red; display: none;"
+            >Nope, passwords do not match!</p>
+
+            <!-- Account Type Selection (Radio Buttons) -->
+            <label>Account Type:</label>
+            <div class="radio-group">
+                <input
+                    type="radio"
+                    id="personal"
+                    name="account-type"
+                    value="personal"
+                    required
+                >
+                <label for="personal">Personal</label>
+
+                <input
+                    type="radio"
+                    id="business"
+                    name="account-type"
+                    value="business"
+                >
+                <label for="business">Business</label>
+            </div>
+
+            <!-- Checkboxes -->
+            <div class="checkbox-group">
+                <input
+                    type="checkbox"
+                    id="terms"
+                    name="terms"
+                    required
+                >
+                <label for="terms">I accept the Terms of Use</label>
+            </div>
+
+            <div class="checkbox-group">
+                <input
+                    type="checkbox"
+                    id="privacy"
+                    name="privacy"
+                    required
+                >
+                <label for="privacy">I accept the Privacy Policy</label>
+            </div>
+
+            <div class="checkbox-group">
+                <input
+                    type="checkbox"
+                    id="news"
+                    name="news"
+                >
+                <label for="news">I want to receive news and promotional material</label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+    <!-- <footer>
+    </footer> -->
 </body>
 
 </html>

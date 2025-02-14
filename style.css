@@ -1,3 +1,8 @@
+/* Enable Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: #FBFAF7;
     margin: 0;
@@ -149,12 +154,16 @@ li {
     cursor: pointer;
     padding: 10px 20px;
     margin-top: 20px;
-    background: #333;
+    background-color: #333;
     color: white;
     text-transform: uppercase;
     text-decoration: none;
     border-radius: 5px;
-    /* transition: 0.3s; */
+    transition: 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e6b800;
 }
 
 /* grid shop Css */
@@ -209,6 +218,102 @@ li {
 p {
     margin: 0 0 5px 0;
 }
+
+/* Signup Form */
+.signup-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: "Inter", sans-serif;
+}
+
+/* Form Title */
+.signup-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.signup-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Radio Buttons Styling */
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.radio-group input {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+
+.radio-group input:checked {
+    background-color: black;
+}
+
+.radio-group label {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Checkboxes */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Error Message */
+#password-error {
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Submit Button */
+.signup-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.signup-form button:hover {
+    background-color: gray;
+}
+
+
+
 
 
 @media screen and (max-width: 1200px) {
