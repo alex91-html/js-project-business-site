@@ -100,18 +100,12 @@ li {
 .hero-container {
     position: relative;
     margin-top: 7%;
-    /* margin: 5% 5%; */
-    /* Adds 10% margin to the top and bottom, and 5% margin to the left and right */
     height: 50vh;
     overflow: hidden;
     width: auto;
-    /* Change width to auto to respect the left and right margins */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: #333 solid 2px; */
-    /* border-radius: 25px; */
-    /* box-shadow: 0 0 10px rgb(35, 35, 35); */
 }
 
 .overlay {
@@ -170,7 +164,6 @@ li {
 .grid-shop {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    /* margin-top: 5%; */
     border-top: #333 solid 3px;
 }
 
@@ -187,8 +180,6 @@ li {
     flex-direction: column;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: filter 0.3s;
-    /* box-shadow:  0 0px 0 black, 1px 0 0px 0 black; */
-    /* !!! to make the shadow on the right side only !!! */
 }
 
 .grid-shop article:hover {
@@ -219,22 +210,33 @@ p {
     margin: 0 0 5px 0;
 }
 
+.signup-section {
+    background-color: rgba(43, 43, 196, 0.494);
+    padding: 20px;
+    border-top: #333 solid 3px;
+}
+
 /* Signup Form */
 .signup-form {
     width: 100%;
     max-width: 400px;
     margin: 30px auto;
-    padding: 20px;
+    padding: 40px 80px;
     background: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    font-family: "Inter", sans-serif;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    /* font-family: "Inter", sans-serif; */
 }
 
 /* Form Title */
 .signup-form h2 {
     text-align: center;
     margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-weight: inherit;
+    font-optical-sizing: auto;
 }
 
 /* Input Fields */
@@ -274,7 +276,7 @@ p {
 }
 
 .radio-group input:checked {
-    background-color: black;
+    background-color: blue;
 }
 
 .radio-group label {
