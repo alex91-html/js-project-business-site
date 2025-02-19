@@ -38,8 +38,8 @@
 
 <body>
   <!-- header here -->
-  <header class="nav-menu">
-    <div class="menu-icons-container">
+  <header class="nav-header">
+    <div class="header-icons-container">
       <a
         href="#"
         class="header_logo"
@@ -47,7 +47,6 @@
         <!-- logo -->
         <!-- this is the svg logo, exported from illustrator, opend with text editor and copy pasted the code here-->
         <svg
-          class="logo-svg"
           data-name="Layer 2"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 203.6 103.6"
@@ -114,7 +113,7 @@
       </ul>
     </nav>
   </header>
-
+  <!-- 
   <section class="hero-container">
     <div class="hero-content">
       <h1>Timeless Designs, Crafted for You</h1>
@@ -127,16 +126,16 @@
       >Sign Up</a>
     </div>
     <div class="overlay"></div>
-    <div class="hero-video">
-      <video
-        src="./assets/video.mp4"
-        type="video/mp4"
-        autoplay
-        loop
-        muted
-        palysinline
-      ></video>
-  </section>
+    <video
+      src="./assets/video.mp4"
+      type="video/mp4"
+      autoplay
+      loop
+      muted
+      palysinline
+      class="hero-video"
+    >The video doesn't work on your browser, sorry!</video>
+  </section> -->
 
   <main class="grid-shop">
     <!-- article -->
@@ -214,20 +213,6 @@
     <article>
       <a href="#">
         <img
-          src="./assets/img6.png"
-          alt="image"
-        >
-        <div class="card_content">
-          <h2>Product title</h2>
-          <p>Product description here ...</p>
-          <p>Price: 15000 SEK</p>
-        </div>
-      </a>
-    </article>
-    <!-- article -->
-    <article>
-      <a href="#">
-        <img
           src="./assets/img7.png"
           alt="image"
         >
@@ -267,7 +252,9 @@
       </a>
     </article>
   </main>
-  <!-- Signup Section (Target for Scroll) -->
+
+  <!-- SIGN UP SECTION STARTS BELLOW (Target for Scroll) -->
+
   <section
     id="signup"
     class="signup-section"
