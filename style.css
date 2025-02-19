@@ -330,7 +330,7 @@ h1 {
 
 .card_content h2 {
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .card_content h2,
