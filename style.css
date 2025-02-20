@@ -4,9 +4,7 @@
   box-sizing: border-box;
 }
 
-
-body,
-html {
+body {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -25,6 +23,13 @@ li {
   list-style: none;
   color: #333;
   transition: color 0.3s;
+}
+
+.cls-1 {
+  fill: none;
+  stroke: #000000;
+  stroke-miterlimit: 10;
+  stroke-width: 8.5px;
 }
 
 /* = = = HEADER style = = = */
@@ -101,7 +106,6 @@ li {
 }
 
 .hero-container {
-  /* padding: 100px; */
   position: relative;
   height: 60vh;
   overflow: hidden;
