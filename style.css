@@ -171,9 +171,7 @@ li {
   z-index: 1;
 }
 
-
-
-/* grid shop Css */
+/* = = = grid shop Css = = = */
 .grid-shop {
   display: grid;
   grid-template-columns: 1fr;
@@ -341,14 +339,14 @@ p {
   margin-top: 0px;
 }
 
-/* (0px - 1023px) - mobile  & yablet – Show only icons */
+/* mobile & yablet – Show only icons */
 @media (min-width: 320px) and (max-width: 1024px) {
   .nav-list-container {
     display: none;
   }
 }
 
-/* (≥1024px) - desktop onwars – Show text links, hide icons */
+/* desktop onwars – Show text links, hide icons */
 @media (min-width: 1025px) {
   .nav-icon-container {
     display: none;
@@ -373,6 +371,5 @@ p {
 @media (min-width: 1024px) {
   .grid-shop {
     grid-template-columns: repeat(4, 1fr);
-    /* Four columns on desktops */
   }
 }
