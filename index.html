@@ -81,25 +81,34 @@
           </g>
         </svg>
       </a>
-      <!-- icons -->
+      <!-- icons on mobile -->
       <div class="nav-icon-container">
         <span class="material-symbols-outlined">search</span>
         <span class="material-symbols-outlined">shopping_bag</span>
         <span class="material-symbols-outlined">account_circle</span>
-        <span class="material-symbols-outlined">menu</span>
+        <div class="burger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- <span
+          class="material-symbols-outlined"
+          id="burgerMenu"
+        >menu</span> -->
       </div>
     </div>
 
+    <!-- list on desktop -->
     <nav class="nav-list-container">
       <ul class="nav-list1">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Designers</a></li>
-        <li><a href="#">Furnitures</a></li>
+        <li><a href="index.html">About</a></li>
+        <li><a href="index.html">Designers</a></li>
+        <li><a href="index.html">Furnitures</a></li>
       </ul>
       <ul class="nav-list2">
-        <li><a href="#">Search</a></li>
-        <li><a href="#">Account</a></li>
-        <li><a href="#">Cart ( 0 )</a></li>
+        <li><a href="index.html">Search</a></li>
+        <li><a href="index.html">Account</a></li>
+        <li><a href="index.html">Cart ( 0 )</a></li>
       </ul>
     </nav>
   </header>
@@ -113,10 +122,10 @@
             living.</p>
           <p>Sign up now & get 10% Off!</p>
         </div>
-        <a
-          href="#signup"
+        <button
+          id="scrollButton"
           class="cta-button"
-        >Sign Up</a>
+        >Sign Up</button>
       </div>
       <div class="overlay"></div>
       <video
@@ -247,9 +256,12 @@
     </article>
   </main>
 
-  <!-- SIGN UP SECTION STARTS BELLOW (Target for Scroll) -->
+  <!-- SIGN UP SECTION STARTS BELLOW -->
 
-  <section class="signup-section"> <!-- this is the target for the scroll -->
+  <section
+    id="targetSection"
+    class="signup-section"
+  > <!-- this is the target for the scroll -->
     <form
       class="signup-form"
       action="https://httpbin.org/anything"
@@ -291,7 +303,7 @@
       >
 
       <!-- Account Type Selection (Radio Buttons) -->
-      <label>Account Type:</label>
+      <label for="account-type">Account Type:</label>
       <div class="radio-group">
         <input
           type="radio"
@@ -300,11 +312,11 @@
           required
         >
         <label for="personal">Personal</label>
-
         <input
           type="radio"
           name="account-type"
           value="business"
+          required
         >
         <label for="business">Business</label>
       </div>
@@ -343,8 +355,9 @@
       >Sign Up</button>
     </form>
   </section>
-  <!-- <footer>
-    </footer> -->
+  <footer>Hello there
+  </footer>
+  <script src="./script.js"></script>
 </body>
 
 </html>
