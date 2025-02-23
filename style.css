@@ -26,10 +26,23 @@ li {
 }
 
 .cls-1 {
-  fill: none;
-  stroke: #000000;
-  stroke-miterlimit: 10;
+  fill: #231f20;
+}
+
+.cls-2 {
+  fill: #9697ca;
   stroke-width: 8.5px;
+}
+
+.cls-2,
+.cls-3 {
+  stroke: #231f20;
+  stroke-miterlimit: 10;
+}
+
+.cls-3 {
+  fill: #9797ca;
+  stroke-width: 5.7px;
 }
 
 /* header*/
@@ -218,6 +231,7 @@ li {
   height: 100%;
   object-fit: cover;
   z-index: -1;
+  -webkit-filter: invert(100%) blur(2px) brightness(100%);
   filter: invert(100%) blur(2px) brightness(100%);
 }
 
@@ -398,7 +412,7 @@ footer {
 
   .nav-list1.active {
     background-color: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     height: 100vh;
     width: 100vw;
     max-width: auto;

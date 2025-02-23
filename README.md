@@ -4,8 +4,5 @@ netlify link: https://designshop.netlify.app/
 
 
 
-<h3>STILL TO DO:</h3>
-<ul>
-<li>fixing a new logo</li>
-</ul>
+<p> The webiste css seems a little different on safari, specialy for "filters", I added "-webkit-" etc, but to be safe please for the course purpose visit the site on chrome, thx u! </p>
 
